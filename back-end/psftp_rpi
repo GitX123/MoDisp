@@ -1,0 +1,16 @@
+# psftp script
+lcd C:\Users\Eric\Desktop\back-end\MoDisp
+cd /home/pi/MoDisp/front-end/css
+rm *
+cd ../image
+rm *
+cd ../js
+rm *
+cd ..
+rmdir css image js
+rm *
+cd ..
+rmdir front-end
+rm *
+put -r .
+chmod a+x init.sh

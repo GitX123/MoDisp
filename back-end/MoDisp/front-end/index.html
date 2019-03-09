@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MoDisp: IoT-enabled Modular Display</title>
+		<link rel="icon" href="image/favicon.png" />
+		<link rel="stylesheet" href="css/MoDisp.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/socket.io.js"></script>
+		<script src="js/MoDisp.js"></script>
+	</head>
+	<body>
+		<header>MoDisp: IoT-enabled Modular Display <div id="conn_stat">disconnected</div></header>
+		<div id="main">
+			<nav><!--
+				<h1>function<br>blocks</h1>
+				<ul>
+					<li mode_name="new_dbd"><img src="image/nav_dbd_64.png"><br>dot-by-dot</li>
+					<li mode_name="new_scr"><img src="image/nav_scr_64.png"><br>scrolling text</li>
+				</ul> -->
+				<ul>
+					<li mode_name="file"><img src="image/nav_file_64.png"><br>file</li>
+				</ul>
+				<h1>modify</h1>
+				<ul>
+					<li mode_name="move"><img src="image/nav_move_64.png"><br>move</li>
+					<li mode_name="delete"><img src="image/nav_delete_64.png"><br>delete</li>
+					<li mode_name="clear"><img src="image/nav_clear_64.png"><br>clear all</li>
+				</ul>
+				<h1>operate</h1>
+				<ul>
+					<li mode_name="reset"><img src="image/nav_reset_64.png"><br>reset</li>
+					<li mode_name="test"><img src="image/nav_test_64.png"><br>test</li>
+					<li mode_name="demo1"><img src="image/nav_demo1_64.png"><br>demo1</li>
+					<li mode_name="demo2"><img src="image/nav_demo2_64.png"><br>demo2</li>
+				</ul>
+			</nav>
+			<section>
+			</section>
+		</div>
+		<div id="dbd_editor_bg" class="editor_bg">
+			<div id="dbd_editor_frame">
+				<div id="dbd_editor_matrix"></div>
+				<div id="dbd_editor_indicator"></div>
+				<div class="color_icon" style="background-color: rgb(255,30,30);"></div>
+				<input id="dbd_editor_slider_r" type="range" min="0" max="15" step="1" value="0">
+				<div class="color_icon" style="background-color: rgb(30,255,30);"></div>
+				<input id="dbd_editor_slider_g" type="range" min="0" max="15" step="1" value="15">
+			</div>
+		</div>
+		<div id="file_bg" class="editor_bg">
+			<div id="file_frame">
+				<button id="file_save">save</button>
+			</div>
+		</div>
+		<div id="demo1_bg" class="editor_bg" style="background-color:transparent;"></div>
+		<div id="demo2_bg" class="editor_bg" style="background-color:transparent;"></div>
+	</body>
+</html>
