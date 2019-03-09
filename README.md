@@ -8,3 +8,7 @@ Robust and flexible modular display system which reconfigures data paths upon ha
 [controller]
 * Run on ATMEGA 328
 * James Chan contributed to the firmware, while e841018 designed the PCB.
+
+[bracket]
+* Designed by Onshape, publicly available at
+  https://cad.onshape.com/documents/cf011c8e0843ee4877112711/w/4f09f0267c82e90f73bca7a8/e/ec47567f47b796b4294d7e92
